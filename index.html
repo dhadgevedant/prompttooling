@@ -92,8 +92,27 @@ duration-800 border-l border-black">
 
 
 <script>
+
+
+
+
+
     const prompt = document.getElementById('prompt');
     const tool = document.getElementById('tool');
+    const tools = document.getElementById('tool');
+
+    gsap.from(prompt, {
+        x:-1000,
+        ease: 'elastic.out',
+        duration: 1,
+    })
+    gsap.from(tools, {
+        x:1000,
+        ease: 'elastic.out',
+        duration: 1,
+       
+    })
+
 
     window.addEventListener('scroll', () => {
         // Get the scroll percentage
