@@ -48,16 +48,19 @@ const tool = document.getElementById('tool');
 const tools = document.getElementById('tool');
 
 gsap.from(prompt, {
+    
     x:-1000,
-    ease: 'elastic.out',
-    duration: 1,
+    ease: 'back.out',
+    duration: 0.5,
 })
 gsap.from(tools, {
+    
     x:1000,
-    ease: 'elastic.out',
-    duration: 1,
+    ease: 'back.out',
+    duration: 0.5,
    
 })
+
 
 const slider = document.getElementById('slider')
 slider.style.transform = 'translateX(33%)'
