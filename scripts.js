@@ -25,23 +25,6 @@ window.addEventListener('scroll', () => {
 
 });
 
-// const landingContact = document.getElementById('landingContact');
-
-// gsap.from(landingContact, {
-  
-//   delay:2,
-//   y:100,
-//   ease: 'elastic',
-//   duration: 2,
-  
-  
-// });
-
-
-
-
-
-
 
 const prompt = document.getElementById('prompt');
 const tool = document.getElementById('tool');
@@ -76,6 +59,16 @@ gsap.to(slider,{
 
   }
 });
+
+
+//Contact section
+function sendEmail() {
+    const name = document.querySelector('input[placeholder="Name"]').value;
+    const email = document.querySelector('input[placeholder="Email"]').value;
+    const question = document.querySelector('input[placeholder="your question"]').value;
+    const mailtoLink = `mailto:dhadgevedant@gmail.com?subject=Enquiry from Website&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AQuestion: ${question}`;
+    window.location.href = mailtoLink;
+}
 
 
 
